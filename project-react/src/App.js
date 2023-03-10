@@ -4,7 +4,7 @@ import './App.css';
 function App() {
   const name = '리액트';
   const style1 = {
-    backgroundColor : 'black',
+    backgroundColor : 'black', // 카멜 표기법 background-color
     color:'aqua',
     fontSize:'48px',
     fontWeight:'bold',
