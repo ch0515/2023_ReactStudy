@@ -3,7 +3,7 @@ import './App.css';
 
 function App() {
   const number = undefined;
-  return number;
+  return <>{number || '리액트'}</>;
 }
 
 export default App;
