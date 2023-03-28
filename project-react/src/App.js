@@ -1,7 +1,6 @@
-import MyComponent from './MyComponent';
-
+//App.js
+import EventPractice from "./EventPractice";
 const App = () => {
-  return <MyComponent name="chaemin"/>
-}
-
+return <EventPractice />;
+};
 export default App;
