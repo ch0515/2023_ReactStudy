@@ -1,14 +1,17 @@
-import { useState } from "react";
-import Timer from "./component/Timer";
+import React,{useState, useRef, useEffect} from "react";
 
 const App = () => {
-  const [showTimer, setShowTimer] = useState(false);
+  const [count, setCount] = useState(1);
+  const renderCount = useRef(1);
+
+  useEffect(() => {
+    renderCount.current = renderCount.current + 1;
+    console.log("렌더링 수", renderCount.current);
+  });
   return(
     <div>
-      {showTimer && <Timer/>}
-      <button onClick={() => setShowTimer(!showTimer)}>Toggle</button>
+      <p>Count: {count}</p>
+      <button onClick={() => setCount(count + 1)}>올려</button>
     </div>
   );
 };
-
-export default App;
